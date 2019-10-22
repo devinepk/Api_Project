@@ -3,7 +3,7 @@ var mykey = config.UNSPLASH_KEY;
 var app = new Vue({
   el: '#app',
   data: {
-    quote: "It always seems impossible until it's done - Nelson Mandela"
+    quote: "Life Through A Camera Lens.  It Really Is Perspective."
   }
 })
 

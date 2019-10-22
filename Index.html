@@ -8,17 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>It's not impossible.</title>
+    <title>Through The Lens</title>
   </head>
   <body class="bg-light mt-5">
 
-    <!-- <div id="app" class="text-center">
+    <div id="app" class="text-center">
       <h3>{{ quote }}</h3>
-    </div> -->
+    </div>
 
    <div id="pic" class="container img-fluid" alt="Responsive image">
       <img :src="name.urls.small">
-      <ul class="container text-justified" style="list-style-type:none;">
+      <ul class="container text-justified mt-3" style="list-style-type:none;">
         <li><i class="fas fa-camera-retro"></i> Photo by {{ name.user.name }}.</li>
         <li><i class="fas fa-file-download"></i> You can download the photo <a v-bind:href="name.links.download" target="_blank">here</a>.<li>
         <li><i class="fas fa-user-circle"></i> Don't forget to check out the photographer's <a v-bind:href="name.user.links.html" target="_blank">profile</a></li>
