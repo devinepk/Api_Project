@@ -12,11 +12,17 @@
   </head>
   <body class="bg-light mt-5">
 
-    <div id="app" class="text-center mb-3">
-      <h3>{{ quote }}</h3>
+    <div v-cloak id="app"  class="text-center mb-2">
+      <h4>{{ quote }}</h4>
     </div>
 
-   <div id="pic" class="container img-fluid" alt="Responsive image">
+    <div class="text-center mb-2">
+      <button value="Refresh Page" onClick="window.location.href=window.location.href" type="button" class="btn btn-link"><i class="fas fa-sync-alt"></i></button>
+    </div>
+
+
+
+   <div v-cloak id="pic"  class="container img-fluid" alt="Responsive image">
       <img :src="name.urls.small">
       <ul class="container text-justified mt-3" style="list-style-type:none;">
         <li><i class="fas fa-camera-retro"></i> Photo by {{ name.user.name }}.</li>
@@ -28,12 +34,6 @@
   <div class="container">
     <p>Built for fun by <a href="https://github.com/devinepk">me</a></p>
   </div>
-
-
-
-
-
-
 
 
 
